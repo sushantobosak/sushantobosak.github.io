@@ -18,6 +18,15 @@ body {
   background: var(--bg);
 }
 
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
 .hero {
   background: linear-gradient(135deg, #0f172a, #134e4a);
   color: white;
