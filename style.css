@@ -1,0 +1,141 @@
+:root {
+  --bg: #f7f9fc;
+  --text: #1f2937;
+  --muted: #5b6472;
+  --primary: #0f766e;
+  --dark: #0f172a;
+  --card: #ffffff;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #134e4a);
+  color: white;
+  padding-bottom: 80px;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { font-weight: 700; font-size: 1.1rem; }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  opacity: 0.9;
+}
+.nav-links a:hover { opacity: 1; }
+
+.hero-content {
+  max-width: 900px;
+  margin: 70px auto 0;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.tagline {
+  margin-top: 16px;
+  color: #d1fae5;
+}
+
+.buttons { margin-top: 28px; }
+.btn {
+  display: inline-block;
+  padding: 11px 18px;
+  margin: 6px;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+.btn.primary {
+  background: white;
+  color: var(--primary);
+  border-color: white;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.section.alt {
+  max-width: none;
+  background: white;
+  padding-left: calc((100% - 1000px) / 2 + 24px);
+  padding-right: calc((100% - 1000px) / 2 + 24px);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: var(--dark);
+}
+
+h3 { color: var(--primary); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card, .timeline-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.section.alt .card, .section.alt .timeline-item {
+  background: var(--bg);
+}
+
+.pub-list li { margin-bottom: 16px; }
+
+a { color: var(--primary); }
+
+.contact { text-align: center; }
+.small-note { color: var(--muted); font-size: 0.95rem; }
+
+footer {
+  text-align: center;
+  padding: 28px;
+  background: var(--dark);
+  color: white;
+}
+
+@media (max-width: 700px) {
+  nav { flex-direction: column; gap: 14px; }
+  .nav-links a { margin: 0 8px; }
+  .hero h1 { font-size: 2.3rem; }
+}
