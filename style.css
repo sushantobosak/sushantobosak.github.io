@@ -18,19 +18,10 @@ body {
   background: var(--bg);
 }
 
-.profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 20px;
-}
-
 .hero {
   background: linear-gradient(135deg, #0f172a, #134e4a);
   color: white;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 nav {
@@ -53,7 +44,7 @@ nav {
 
 .hero-content {
   max-width: 900px;
-  margin: 70px auto 0;
+  margin: 25px auto 0;
   padding: 0 24px;
   text-align: center;
 }
@@ -93,12 +84,16 @@ nav {
 .section {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 56px 24px;
+  padding: 28px 24px;
 }
 
 .section.alt {
   max-width: none;
   background: white;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   padding-left: calc((100% - 1000px) / 2 + 24px);
   padding-right: calc((100% - 1000px) / 2 + 24px);
 }
